@@ -1,0 +1,33 @@
+.skill-wrapper {
+  height: 100vh;
+@include position;
+  .skill-bar{
+    width: 500px;
+    position: relative;
+    height: 20px;
+    .bg {
+      width: 100%;
+      background-color: grey;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+    .ff {
+      background-color: orange;
+      z-index: 11;
+      width: 50%;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      animation: identifier 1s ease;
+    } 
+  }
+}
+
+@keyframes identifier {
+  0% { width: 0%; }
+  100% { width: 50%; }
+}
