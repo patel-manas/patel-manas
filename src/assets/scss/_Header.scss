@@ -118,6 +118,7 @@
   .icon {
       display: none;
       cursor: pointer;
+      font-size: 32px;
       color: #b98d14;
   }
   .close {
@@ -144,9 +145,10 @@
         flex-direction: column;
         .menu-item {
             font-size: 32px;
-            font-weight: 600;
+            font-weight: bolder;
             margin: 10px 0px;
-            color: #b98d14;
+            // color: #b98d14;
+            color:white;
         }
   }
   }

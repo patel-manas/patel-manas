@@ -23,7 +23,13 @@ export default function Nav() {
     const menuOptions = ['Home', 'About', 'Skills', 'Resume', 'Work', 'Contact'];
     const mobileNavTemplate = (
         <section className="mobile-nav">
-           {menuOptions.map(menu => <div className="menu-item" key={`item-${menu}`}>{menu}</div>)}
+           {menuOptions.map(menu => <div className="menu-item" key={`item-${menu}`} onClick={menu === "Resume" ? (() => {
+                var win = window.open(Resume, '_blank');
+                win.focus();
+            }) : (() => {
+                handleClose()
+                scrollTo(menu.toLowerCase())
+            })}>{menu}</div>)}
         </section>
     );
     const handleMenu = () => {

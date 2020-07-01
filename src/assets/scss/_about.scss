@@ -32,3 +32,11 @@
     object-fit: cover;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.8fr 1.8fr;
+    grid-template-areas: "title title" "image image" "info info";
+  }
+}

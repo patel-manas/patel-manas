@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <Body />
-      <div className="controls">
+      <div className="controls" style={{display:"none "}}>
         <div onClick={() => scrollTo("logo")}>UP</div>
       </div>
     </div>
