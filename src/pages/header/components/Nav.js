@@ -1,11 +1,17 @@
 import React, {useState} from 'react'
 import {scrollTo} from '../../../utils/scrollTo';
+import Slide from 'react-reveal/Slide';
+import Resume from "../../../assets/ManasPatel_acg.pdf";
+
 export default function Nav() {
     const [mobileNav, setmobileNav] = useState(false);
     const [close, setClose] = useState(false);
     const animatedLi = (text) => {
         return (
-            <li key={text} onClick={() => scrollTo(text.toLowerCase())}>
+            <li key={text} onClick={text === "Resume" ? (() => {
+                var win = window.open(Resume, '_blank');
+                win.focus();
+            }) : (() => scrollTo(text.toLowerCase()))}>
                 {text}
                 <span></span>
                 <span></span>
@@ -30,11 +36,13 @@ export default function Nav() {
     }
     return (
         <nav className="nav">
+            <Slide top>
             <ul>
                 {menuOptions.map(menu => animatedLi(menu))}
             </ul>
-            <span className="icon" onClick={handleMenu}>Icon</span>
-            {close ? <span className="close" onClick={handleClose}>Close</span> : null}
+            </Slide>
+            <span className="icon" onClick={handleMenu}><i class="fa fa-bars" aria-hidden="true"></i></span>
+            {close ? <span className="close" onClick={handleClose}><i class="fa fa-times" aria-hidden="true"></i></span> : null}
             {mobileNav ? mobileNavTemplate : null}
         </nav>
     )

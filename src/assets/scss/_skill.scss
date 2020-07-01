@@ -1,33 +1,47 @@
 .skill-wrapper {
-  height: 100vh;
-@include position;
-  .skill-bar{
-    width: 500px;
-    position: relative;
-    height: 20px;
-    .bg {
-      width: 100%;
-      background-color: grey;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 10;
-    }
-    .ff {
-      background-color: orange;
-      z-index: 11;
-      width: 50%;
-      position: absolute;
-      height: 100%;
-      top: 0;
-      left: 0;
-      animation: identifier 1s ease;
-    } 
+  height: 98vh;
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .skill-title {
+    grid-area: title;
+    font-size: 54px;
+    font-weight: 700;
+    color: #ba8d14;
+    padding: 10px 0px 20px 0px;
+  }
+  .fe-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .be-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .db-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .separator {
+    width: 75%;
+    border-bottom:1px solid  #ba8d14;
   }
 }
 
 @keyframes identifier {
-  0% { width: 0%; }
-  100% { width: 50%; }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
 }
+

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="453.767" height="452" viewBox="0 0 453.767 452">
+  <g id="Group_3" data-name="Group 3" transform="translate(-157.233 -286)">
+    <g id="origami" transform="translate(161 288)">
+      <path id="Path_2" data-name="Path 2" d="M176,40A40,40,0,0,0,136,0H120A40,40,0,0,0,80,40a40,40,0,0,0,0,80h96a40,40,0,0,0,0-80Z" fill="none" stroke="#ba8d14" stroke-width="4"/>
+      <path id="Path_3" data-name="Path 3" d="M416,384a32,32,0,0,0-64,0,32,32,0,0,0,0,64h64a32,32,0,0,0,0-64Z" fill="none" stroke="#ba8d14" stroke-width="4"/>
+      <path id="Path_7" data-name="Path 7" d="M0,240l64,64L96,424l16-72,72,72L392,120Z" fill="none" stroke="#ba8d14" stroke-width="4"/>
+      <g id="Group_2" data-name="Group 2">
+        <path id="Path_8" data-name="Path 8" d="M392,120,64,304,0,240Z" fill="none" stroke="#ba8d14" stroke-width="4"/>
+        <path id="Path_9" data-name="Path 9" d="M184,424l-72-72L392,120Z" fill="none" stroke="#ba8d14" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+</svg>

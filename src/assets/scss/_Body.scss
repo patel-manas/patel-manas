@@ -48,6 +48,11 @@
           background-color: #b98d14;
           color: #fff;
         }
+        div:first-child:hover {
+          background-color: #000;
+          border: 1px solid #b98d14;
+          color: #b98d14;
+        }
         div:last-child {
           margin-left: 20px;
           border: 1px solid #b98d14;
@@ -55,11 +60,32 @@
           text-align: center;
           color: #b98d14;
         }
+        div:last-child:hover {
+          background-color: #b98d14;
+          color: #fff;
+        }
       }
     }
     .hero-image {
       margin-left: auto;
       padding-right: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .body {
+    .intro-wrapper {
+      .intro {
+        .cta {
+          div {
+            width: 145px;
+          }
+        }
+      }
+      .hero-image {
+        display: none;
+      }
     }
   }
 }

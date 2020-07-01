@@ -2,6 +2,7 @@ import React from 'react';
 import Landing from './components/Landing';
 import About from './components/About';
 import Skill from './components/Skill';
+import Contact from './Contact';
 
 export default function Body() {
     return (
@@ -9,6 +10,7 @@ export default function Body() {
             <Landing />
             <About />
             <Skill />
+            <Contact />
         </div>
     )
 }
